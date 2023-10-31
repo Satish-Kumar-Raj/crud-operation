@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+    <style>
+        body{
+            height:100vh;
+            width:100%;
+            box-sizing: border-box;
+            background-color: aliceblue;
+
+        }
+        .container{
+            height:100%;
+            width:100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form_container{
+            height:96vh;
+            width:40%;
+            background-color: rgb(164, 152, 152);
+
+        }
+        h1{
+            text-align: center;
+            font-size:1.5em;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap:0.5em;
+        }
+        label{
+            font-size: 1.5em;
+            margin-left: .5em;
+           
+        }
+        input,select{
+            width: 35vw;
+            height: 4vh;
+            border-radius: .5em;
+            margin-left: 1.3em;
+            margin-top: 0.5em;
+        }
+        button{
+            width: 35vw;
+            height: 2.5em;
+            border-radius: 1em;
+            margin-left: 1.3em;
+            margin-top: .5em;
+            background-color: rgb(24, 157, 41);
+            color: white;
+           font-size: 0.8em;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form_container">
+            <h1>Student Admission Form</h1>
+            <form action="/ho" method="post" >
+                <label>Name</label>
+                <input type="text" name="Name"  placeholder="Enter Name ......." />
+                <label for="email"> Email ID</label>
+                <input type="email" name="email" id="email" placeholder="Enter Email ......." />
+                <label for="date"> Birth Date</label>
+                <input type="date" name="date" id="date" placeholder="Enter DOB ......." />
+                <label for="gender"> Gender</label>
+                <select name="gender" id="gender">
+                    <option>select Your Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+                <label for="phone"> Phone</label>
+                <input type="phone" name="phone" id="name" placeholder="Enter Phone ......." />
+                <label for="city"> City</label>
+                    <select id="city" name="city">
+                        <option>select Your City</option>
+                        <option>Lucknow</option>
+                        <option>Goa</option>
+                        <option>Bihar</option>
+                    </select>                
+                <button>Submit</button>
+            </form>
+        </div>
+
+
+    </div>
+</body>
+</html>
